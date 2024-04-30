@@ -184,3 +184,24 @@ document.write("¿Es un destino costero? "+ destinoCostero + "</br>");
 let destinoUrbano = true;
 document.write("¿Es un destino urbano? "+ destinoUrbano + "</br>");
 document.write("------------------------------------------------------------------------------------------" + "</br>");
+// CONSTANTES
+// Ejercicio 7: Declara las siguientes variables o constantes según corresponda:
+const numeroMeses = 12;
+document.write("El número de meses es  " + numeroMeses + "</br>");
+const numeroSemana = 7;
+document.write("El número de días en una semana es  " + numeroSemana + "</br>");
+const numeroHabitantes = 3.3;
+document.write("El número de habitantes en Madrid es de  " + numeroHabitantes + " " + "millones"+"</br>");
+const edadCantante = 68;
+document.write("La edad de mi cantante favorito es  " + edadCantante +" " + "años " + "</br>");
+const numeroEstaciones = 4;
+document.write("Las estaciones del año son   " + numeroEstaciones + "</br>");
+const nombreCiudad = "Madrid"
+document.write("El nombre de la ciudad donde vivo es  " + nombreCiudad + "</br>");
+const numeroHoras = 24;
+document.write("El número de horas en un día son  " + numeroHoras + " " + "horas" + "</br>");
+const precioGasolina = 1.5;
+document.write("El precio de la gasolina está a   " + precioGasolina + " " + "por litro" + "</br>");
+const numeroLibros = "He perdido la cuenta"
+document.write(numeroLibros + "</br>");
+document.write("------------------------------------------------------------------------------------------" + "</br>");
