@@ -51,6 +51,16 @@ document.write("La variable booleana esta soleado es: " + estaSoleado);
 document.write("</br>");
 document.write("La variable booleana es de dia es:" + esDeDia);
 document.write("</br>");
+//CONSTANTES
+//SE USA PARA GUARDAR VALORES QUE NO CAMBIAN. A diferencia de las variables no se les puede cambiar el valor.
+const NUMERODEDIASSEMANA = 7;
+
+document.write("la semana tiene " + NUMERODEDIASSEMANA + " dias");
+document.write("</br>");
+
+const PI = 3.14;
+document.write("La constante numero PI: " + PI );
+document.write("</br>");
 document.write("------------------------------------------------------------------------------------------" + "</br>");
 
 //EJERCICIOS PARA PRACTICAR
