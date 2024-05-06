@@ -118,18 +118,12 @@ document.write("El área del rectángulo es " + " " + areaRectangulo + "<br>");
 let base2 = 10;
 let altura2 = 8;
 let areaTriangulo = (base2 * altura2)/2;
-document.write("El área del triángulo es " + " " + areaTriangulo + "<br>");
+document.write("El área del triángulo es " + areaTriangulo + "<br>");
 // 5. Calcula el área de un círculo con radio de 4 centímetros
 let radio = 4;
-const pi = 3.14159;
+const PI = 3.14159;
 let areaCirculo = pi * (radio * radio);
 document.write("El área de un círculo es " + " " + areaCirculo + "<br>");
-// 6. Encuentra el área de un trapecio con bases de longitudes 6 cm y 10 cm, y altura de 8 cm
-let baseTrapecio1 = 6;
-let baseTrapecio2 =10;
-let altura1 = 8;
-let areaTrapecio = ((baseTrapecio1 + baseTrapecio2) * altura1)/2;
-document.write("El área de un trapecio es " + " " + areaTrapecio + "<br>");
 // 7. Determina el área de un rombo con diagonales de longitudes 12 cm y 16 cm.
 let diagonal1 = 12;
 let diagonal2 = 16;
