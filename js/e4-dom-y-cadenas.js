@@ -78,75 +78,126 @@ ejemplo10.innerText = "Antes de reemplazar " + mensajeBienvenida + " despues de 
 // su longitud
 let frase = "Hola que tal, bienvenida a QA";
 let longitud = frase.length;
-document.write("Longitud es " + longitud + "<br>");
+let ejercicio1 = document.getElementById("longitud");
+ejercicio1.innerText = "La frase Hola que tal, bienvenida a QA tiene  " + longitud + " " + "caracteres";
+
 // La posición de la palabra QA
-document.write(" La posición de la palabra QA está en la " + " " + frase.indexOf("QA") + "<br>");
+let palabraPosicion = frase.indexOf("QA")
+let ejercicioDos = document.getElementById("posicion");
+ejercicioDos.innerText = "La palabra QA está en la posición " + palabraPosicion;
+
 // La primera letra de la frase
-document.write(" La primera letra está en la posición " + " " + frase.indexOf("H") + "<br>");
+let letraPrimera = frase[0];
+let subEjercicio3 = document.getElementById("letra");
+subEjercicio3.innerText = "La primera letra es: " + letraPrimera;
+
 // La última letra de la frase
-document.write(" La última letra  de la frase está en la posición " + " " + frase.indexOf("A") + "<br>");
-// Crea una variable nueva extrayendo la palabra Hola de la cadena
-let hola = frase.slice(0,4);
-document.write(hola);
-document.write("<br>");
-// Crea una variable nueva extrayendo la palabra QA de la cadena.
-let qa = frase.slice(27,);
-document.write(qa);
-document.write("<br>");
-// Crea una variable con la palabra bienvenida
-let bienvenida = "bienvenida";
+let letraUltima = frase[longitud -1];
+let subEjercicio4 = document.getElementById("ultima");
+subEjercicio4.innerText = "La última letra de la frase es: " + letraUltima;
+
 // Muestra la frase completa en mayúscula
-document.write(frase.toUpperCase());
-document.write("<br>");
+let fraseMayuscula = frase.toUpperCase();
+let subEjercicio5 = document.getElementById("mayuscula");
+subEjercicio5.innerText = fraseMayuscula;
+
 // Muestra la frase completa en minúscula
-document.write(frase.toLowerCase());
-document.write("<br>");
-// Cambia la palabra bienvenida, por bienvenido
-document.write(frase.replace("bienvenida", "bienvenido"));
-document.write("<br>");
-document.write(bienvenida.replace("a", "o"));
-document.write("<br>");
+let fraseMinuscula = frase.toLowerCase();
+let subEjercicio6 = document.getElementById("minuscula");
+subEjercicio6.innerText = fraseMinuscula;
+
+// Crea una variable con tu nombre, y modifica la frase para que diga Hola seguido de tu nombre
+let studentName = "Rebeca";
+let welcomeMessage = frase.replace("que tal", studentName);
+let subEjercicio7 = document.getElementById("nombre");
+subEjercicio7.innerText = welcomeMessage;
+
 // Crea una nueva palabra, con la misma frase quitando la palabra que tal
-let frase2 = frase.replace("que tal", "");
-document.write(frase2);
-document.write("<br>");
+let palabra2 = "";
+let welcomeMessage2 = frase.replace("que tal", palabra2);
+let subEjercicio8 = document.getElementById("palabra");
+subEjercicio8.innerText = welcomeMessage2;
+
 // 2. Crea una variable con una frase en la que te presentes y muestrala junto con:
 // su longitud
+let divContenido1 = document.getElementById("contenidoEjercicios");
 let frase3 = "Hola, me llamo Rebeca y me gusta leer";
 let longitud2 = frase3.length;
-document.write("Longitud es " + longitud2 + "<br>");
-document.write("<br>");
+let nuevoTitulo1 = document.createElement("p");
+nuevoTitulo1.innerText = frase3 +"." + " " + "La longitud es de " + longitud2 + " " + "caracteres";
+divContenido1.appendChild(nuevoTitulo1);
+
 // La posición de tu nombre
-document.write(" Mi nombre está en la posición " + " " + frase3.indexOf("Rebeca") + "<br>");
+let divContenido2 = document.getElementById("contenidoEjercicios");
+let posicion = frase3.indexOf("Rebeca");
+let nuevoTitulo2 = document.createElement("p");
+nuevoTitulo2.innerText = "El nombre está en la posición" + " " + posicion;
+divContenido2.appendChild(nuevoTitulo2);
+
 // La primera letra de la frase
-document.write(" La primera letra está en la posición " + " " + frase3.indexOf("H") + "<br>");
+let divContenido3 = document.getElementById("contenidoEjercicios");
+let primeraLetra2 = frase3[0];
+let nuevoTitulo3 = document.createElement("p");
+nuevoTitulo3.innerText = "La primera letra de la frase es " + " " + primeraLetra2;
+divContenido3.appendChild(nuevoTitulo3);
+
 // La última letra de la frase
-document.write(" La última letra  de la frase está en la posición " + " " + frase3.indexOf("r") + "<br>");
+let divContenido4 = document.getElementById("contenidoEjercicios");
+let ultimaLetra2 = frase3[longitud2 -1];
+let nuevoTitulo4 = document.createElement("p");
+nuevoTitulo4.innerText = "La última letra de la frase es " + " " + ultimaLetra2;
+divContenido4.appendChild(nuevoTitulo4);
+
 // Crea una variable nueva extrayendo la palabra tu nombre de la cadena
+let divContenido5 = document.getElementById("contenidoEjercicios");
 let nombre = frase3.slice(15,21);
-document.write(nombre);
-document.write("<br>");
+let nuevoTitulo5 = document.createElement("p");
+nuevoTitulo5.innerText = nombre;
+divContenido5.appendChild(nuevoTitulo5);
+
 // Muestra la frase completa en mayúscula
-document.write(frase3.toUpperCase());
-document.write("<br>");
+let divContenido6 = document.getElementById("contenidoEjercicios");
+let fraseMayuscula2 = frase3.toUpperCase();
+let nuevoTitulo6 = document.createElement("p");
+nuevoTitulo6.innerText = fraseMayuscula2;
+divContenido6.appendChild(nuevoTitulo6);
+
 // Muestra la frase completa en minúscula
-document.write(frase3.toLowerCase());
-document.write("<br>");
+let divContenido7 = document.getElementById("contenidoEjercicios");
+let fraseMinuscula2 = frase3.toLowerCase();
+let nuevoTitulo7 = document.createElement("p");
+nuevoTitulo7.innerText = fraseMinuscula2;
+divContenido7.appendChild(nuevoTitulo7);
+
 // Cambia tu nombre por otro que elijas
-document.write(frase3.replace("Rebeca", "Emma"));
-document.write("<br>");
+let divContenido8 = document.getElementById("contenidoEjercicios");
+let nuevoNombre = frase3.replace("Rebeca", "Emma");
+let nuevoTitulo8 = document.createElement("p");
+nuevoTitulo8.innerText = nuevoNombre;
+divContenido8.appendChild(nuevoTitulo8);
+
 // Crea una nueva palabra, con la misma frase quitando tu nombre
+let divContenido9 = document.getElementById("contenidoEjercicios");
 let frase4 = frase3.replace("Rebeca", "");
-document.write(frase4);
-document.write("<br>");
+let nuevoTitulo9 = document.createElement("p");
+nuevoTitulo9.innerText = frase4;
+divContenido9.appendChild(nuevoTitulo9);
+
 // 3. Crea una variable con tu nombre y apellido. Quita los espacios de la variable y muestralo por pantalla
 let nombreApellido = " Rebeca Arias ";
-document.write(nombreApellido.split(" "));
-document.write("<br>");
+let espacios = nombreApellido.split(" ");
+let ejercicio3 = document.getElementById("espacio");
+ejercicio3.innerText = espacios;
+
 // 4. Crea una variable con una palabra en minuscula. Cambia la primera letra a mayuscula y muestrala por pantalla.
 let palabra = "bristol";
-document.write(palabra.charAt(0).toUpperCase() + palabra.slice(1));
-document.write("<br>");
+let primeraLetra3 = palabra.charAt(0).toUpperCase();
+let ejercicio4 = document.getElementById("camel");
+ejercicio4.innerText = primeraLetra3 + palabra.slice(1);
+
+
 // 5. Crea una cadena con el texto Hola Mundo. Reemplaza la palabra Hola por Adios y muestralo por pantalla
 let holaMundo = "Hola mundo";
-document.write(holaMundo.replace("Hola", "Adios"));
+let despedida = holaMundo.replace("Hola", "Adios");
+let ejercicio5 = document.getElementById ("hola");
+ejercicio5.innerText = despedida;
