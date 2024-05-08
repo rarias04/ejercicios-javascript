@@ -43,6 +43,7 @@ document.write(" entre " + mitad);
 document.write(" seria en total: " + mitadPrecio);
 document.write("<br/>");
 document.write("-----------------------------------------------------------------------------------------------")
+document.write("<br/>");
 
 //COMBINAR VARIAS OPERACIONES
 //Usar parentesis en las operaciones que querais hacer primero.
@@ -52,7 +53,7 @@ let notaExamen3 = 6.5;
 let totalExamenes = 3;
 let notaMedia2;
 
-notaMedia = (notaExamen1 + notaExamen2 + notaExamen3)/totalExamenes;
+notaMedia2 = (notaExamen1 + notaExamen2 + notaExamen3)/totalExamenes;
 document.write("Combinar varias operaciones: La media de los examenes " + notaExamen1 + " " + notaExamen2 + " " + notaExamen3 );
 document.write(" seria en total: " + notaMedia2);
 document.write("<br/>");
@@ -122,7 +123,7 @@ document.write("El área del triángulo es " + areaTriangulo + "<br>");
 // 5. Calcula el área de un círculo con radio de 4 centímetros
 let radio = 4;
 const PI = 3.14159;
-let areaCirculo = pi * (radio * radio);
+let areaCirculo = PI * (radio * radio);
 document.write("El área de un círculo es " + " " + areaCirculo + "<br>");
 // 7. Determina el área de un rombo con diagonales de longitudes 12 cm y 16 cm.
 let diagonal1 = 12;
