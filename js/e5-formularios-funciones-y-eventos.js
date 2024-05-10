@@ -74,3 +74,64 @@ function mostrarUbicacion () {
     let mensaje = "Te encuentras en la ciudad " + ciudadSeleccionada;
     imprimir(mensaje,"e4solucion");
 }
+
+// Ejercicios 
+// 1. Crea un formulario para introducir nombre, ciudad y fecha de nacimiento.
+function bienvenida(){
+    let nombre = document.getElementById("ex1texto").value;
+    let ciudad = document.getElementById("ex2texto").value;
+    let nacimiento = document.getElementById("ex1datetime").value;
+    let mensaje = "Bienvenido " + nombre + " , nacido en " + ciudad + " , en el " + nacimiento;
+    imprimir(mensaje,"ex1solucion");
+}
+
+// 2. Crea un formulario para introducir dos numeros.
+function calculoMultiple(){
+    let num1 = parseFloat(document.getElementById("ex2number1").value);
+    let num2 = parseFloat(document.getElementById("ex2number2").value);
+    let suma = num1 + num2;
+    let resta = num1 - num2;
+    let multiplicacion = num1 * num2;
+    let division = num1 / num2;
+    let mensaje = "La suma de los números " + num1 + " y " + num2 + " es " + suma + ". " + "La resta de los números "+ num1 + " y " + num2 + " es " + resta + ". " + "La multiplicacion de los números " + num1 + " y " + num2 + " es " + multiplicacion + ". " +  "La división de los números " + num1 + " y " + num2 + " es " + division + ".";
+    imprimir(mensaje, "ex2solucion");
+}
+
+// 3. Crea un formulario para convertir monedas. El usuario debe introducir una catidad en euros.
+function convertidorMonedas(){
+    let moneda = parseFloat(document.getElementById("ex3number").value);
+    let dolar = 1.8;
+    let euro = 0.86;
+    let multiplicar1 = moneda * dolar;
+    let multiplicar2 = moneda * euro;
+    let mensaje = "La conversión de " + moneda + " Euros " + "equivale a  " + multiplicar1 + " Dólares " + "y " +  multiplicar2 + " Libras. ";
+    imprimir(mensaje, "ex3solucion");
+}
+
+//4. Crea un formulario para calcular precio total de un producto.
+function precioTotal(){
+    let nombreProducto = document.getElementById("ex4texto").value;
+    let precio = parseFloat(document.getElementById("ex4text2").value);
+    let cantidad = parseInt(document.getElementById("ex4number2").value);
+    let calcular = precio * cantidad;
+    let mensaje = " El producto " + nombreProducto + " tiene un precio total de " + calcular;
+    imprimir(mensaje, "ex4solucion");
+}
+
+// 5. Crea un formulario para elegir la talla y el color de una camiseta. 
+function eleccion(){
+    let colorCamiseta = document.getElementById("ex5color").value;
+    let talla = document.getElementById("ex5talla").value;
+    let mensaje = " El color de la camiseta elegido es " + colorCamiseta + " y la talla seleccionada es " + talla;
+    imprimir(mensaje, "ex5solucion");
+}
+
+// 6. Crea un formulario para introducir la edad del usuario.
+function calcularEdad(){
+    let edad = parseInt(document.getElementById("ex6number").value);
+    let dias = edad * 365;
+    let min = dias * 24 * 60;
+    let sec = min * 60;
+    let mensaje = " Si tienes " + edad + " años" + " habrás vivido " + dias + " días " + min + " minutos " + " y " + sec + " segundos. "
+    imprimir(mensaje, "ex6resultado");
+}

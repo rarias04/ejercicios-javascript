@@ -247,22 +247,26 @@
             La fecha seleccionada debe situarse entre 1900 y 2024
           </p>
         </div>
-        <button type="button" class="btn btn-success">Enviar</button>
+        <button type="button" class="btn btn-success" onclick="bienvenida()">Enviar</button>
+        <p id="ex1solucion"></p>
         <h3>2. Crea un formulario para introducir dos numeros.</h3>
         <div class="mb-3">
-          <input type="number" id="ex2number" required class="form-control" />
+          <input type="text" id="ex2number1" required class="form-control" />
           <p class="valid-feedback">El introducido es correcto</p>
-          <p class="invalid-feedback">El numero introducido es incorrecto</p>
+          <p class="invalid-feedback">El campo está vacío</p>
+          
         </div>
         <div class="mb-3">
-          <input type="number" id="ex2number" required class="form-control" />
+          <input type="text" id="ex2number2" required class="form-control" />
           <p class="valid-feedback">El introducido es correcto</p>
-          <p class="invalid-feedback">El numero introducido es incorrecto</p>
+          <p class="invalid-feedback">El campo está vacío</p>
         </div>
-        <button type="button" class="btn btn-primary">Calcular</button>
+        <button type="button" class="btn btn-primary" onclick="calculoMultiple()">Calcular</button>
+        <p id="ex2solucion"></p>
         <h3>
+          <p id="ex2solucion"></p>
           3. Crea un formulario para convertir monedas. El usuario debe
-          introducir una catidad en euros.
+          introducir una cantidad en euros.
         </h3>
         <div class="mb-3">
           <input
@@ -275,7 +279,8 @@
           <p class="valid-feedback">El número introducido es correcto</p>
           <p class="invalid-feedback">Debe introducir un número positivo</p>
         </div>
-        <button type="button" class="btn btn-info">Conversión</button>
+        <button type="button" class="btn btn-info" onclick="convertidorMonedas()">Conversión</button>
+        <p id="ex3solucion"></p>
         <h3>
           4. Crea un formulario para calcular precio total de un producto.
         </h3>
@@ -294,10 +299,10 @@
             El campo texto es obligatorio y debe tener entre 3 y 20 caracteres
           </p>
         </div>
-        <div clas="mb-3">
+        <div class="mb-3">
           <input
-            type="number"
-            id="ex4number"
+            type="text"
+            id="ex4text2"
             placeholder="Introduce el precio del producto"
             required
             min="0"
@@ -324,28 +329,34 @@
             cantidad
           </p>
         </div>
-        <button type="button" class="btn btn-warning">Precio Total</button>
+        <button type="button" class="btn btn-warning" onclick="precioTotal()">Precio Total</button>
+        <p id="ex4solucion"></p>
         <h3>
           5. Crea un formulario para elegir la talla y el color de una camiseta.
         </h3>
+        <div clas="mb-3" style="margin-bottom: 20px;">
         <select id="ex5color" class="form-select">
-          <option value="rojo">Rojo</option>
-          <option value="verde">Verde</option>
-          <option value="amarillo">Amarillo</option>
-          <option value="azul">Azul</option>
-          <option value="negro">Negro</option>
+          <option value="Rojo">Rojo</option>
+          <option value="Verde">Verde</option>
+          <option value="Amarillo">Amarillo</option>
+          <option value="Azul">Azul</option>
+          <option value="Negro">Negro</option>
         </select>
+      </div>
+      <div clas="mb-3" style="margin-bottom: 20px;">
         <select id="ex5talla" class="form-select">
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
-        <button type="button" class="btn btn-primary">
+      </div>
+        <button type="button" class="btn btn-primary" onclick="eleccion()">
           Camiseta Seleccionada
         </button>
+        <p id="ex5solucion"></p>
         <h3>6. Crea un formulario para introducir la edad del usuario.</h3>
         <div class="mb-3">
           <input
@@ -353,13 +364,14 @@
             id="ex6number"
             placeholder="Introduce tu edad"
             required
-            min="0"
+            min="1"
             class="form-control"
           />
           <p class="valid-feedback">La edad introducida es correcta</p>
           <p class="invalid-feedback">Debe introducir un número positivo</p>
         </div>
-        <button type="button" class="btn btn-success">Edad</button>
+        <button type="button" class="btn btn-success" onclick="calcularEdad()">Edad</button>
+        <p id="ex6resultado"></p>
         <h3>7.Crea un formulario para mostrar información sobre un texto.</h3>
         <div class="mb-3">
           <textarea
