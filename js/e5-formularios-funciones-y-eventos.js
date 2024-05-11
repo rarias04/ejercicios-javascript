@@ -135,3 +135,42 @@ function calcularEdad(){
     let mensaje = " Si tienes " + edad + " años" + " habrás vivido " + dias + " días " + min + " minutos " + " y " + sec + " segundos. "
     imprimir(mensaje, "ex6resultado");
 }
+
+// 7. Crea un elemento textArea que reciba un texto de longitud entre 10 y 100 caracteres. Debe ser obligatorio. Agrega validación Boostrap.
+function mostrarTexto(){
+    let texto =  document.getElementById("miTextarea").value;
+    let textoMayuculas = texto.toUpperCase();
+    let longitudTexto = texto.length;
+    let letraPrimera = texto[0];
+    let ultimaLetra = texto[longitudTexto -1];
+    let mensaje = "El texto en mayúscuas es " + textoMayuculas + " y su longitud es de " + longitudTexto + " caracteres. " + "La primera letra del texto es " + letraPrimera + "  y  últma es " + ultimaLetra;
+    imprimir(mensaje, "ex7resultado");
+    
+}
+
+// 8. Crea un formulario para calcular la nota media.
+function notaMedia(){
+    let nota1 = document.getElementById("ex8text1").value;
+    let nota2 = document.getElementById("ex8text2").value;
+    let nota3 = document.getElementById("ex8text3").value;
+    let media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3))/3;
+    let mensaje = " La nota media es " + media.toString();
+    imprimir(mensaje, "ex8resultado");
+}
+
+// 9. Crea un formulario para que el usuario pueda seleccionar una cantidad de camisetas, que puede ser vacio, 1,2 o 3, una cantidad de zapatos también entre vacio, 1,2 o 3 y una cantidad de sombreros, que puede ser vacio, 1,2, o 3.
+function productoSeleccion(){
+    let camisetas = document.getElementById("e9cantidad").value;
+    let zapatos = document.getElementById("e9cantidad2").value;
+    let sombreros = document.getElementById("e9cantidad3").value;
+    mensaje = " El usuario ha seleccionado la cantidad de " + camisetas + " camisetas,  la cantidad de " + zapatos  + " zapatos y la cantidad de  " + sombreros + " sombreros.";
+    imprimir(mensaje, "ex9resultado");
+
+}
+
+function mascota(){
+    let nombreMascota = document.getElementById("ex10texto1").value;
+    let tipoMascota = document.getElementById("e10mascota").value;
+    let mensaje = "Su mascota se llama " + nombreMascota + " y el tipo  de seleccionado dentro de esta lista es: " + tipoMascota;
+    imprimir(mensaje, "ex10resultados");
+}

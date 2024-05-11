@@ -376,9 +376,7 @@
         <div class="mb-3">
           <textarea
             id="miTextarea"
-            placeholder="Introduce un texto"
-            rows="4"
-            cols="50"
+            placeholder="Escribe un texto"
             required
             minlength="10"
             maxlength="100"
@@ -390,14 +388,15 @@
           </p>
         </div>
 
-        <button type="button" class="btn btn-default">
+        <button type="button" class="btn btn-default" onclick="mostrarTexto()">
           Visualización del texto
         </button>
+        <p id="ex7resultado"></p>
         <h3>8. Crea un formulario para calcular la nota media</h3>
         <div class="mb-3">
           <input
-            type="number"
-            id="ex8number"
+            type="text"
+            id="ex8text1"
             placeholder="Introduce la nota"
             required
             min="0"
@@ -409,8 +408,8 @@
             Introduzca la nota entre la puntuación 0 y 10
           </p>
           <input
-            type="number"
-            id="ex8number2"
+            type="text"
+            id="ex8text2"
             placeholder="Introduce la nota"
             required
             min="0"
@@ -422,8 +421,8 @@
             Introduzca la nota entre la puntuación 0 y 10
           </p>
           <input
-            type="number"
-            id="ex8number3"
+            type="text"
+            id="ex8text3"
             placeholder="Introduce la nota"
             required
             min="0"
@@ -435,9 +434,10 @@
             Introduzca la nota entre la puntuación 0 y 10
           </p>
         </div>
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" onclick="notaMedia()">
           Calcula La Nota Media
         </button>
+        <p id="ex8resultado"></p>
         <h3>
           9. Crea un formulario para que el usuario pueda seleccionar una
           cantidad de camisetas, que puede ser vacio, 1,2 o 3, una cantidad de
@@ -446,31 +446,32 @@
         </h3>
         <div class="mb-3">
           <select id="e9cantidad" class="form-select">
-            <option value="">Número Camisetas</option>
-            <option value="una">1</option>
-            <option value="dos">2</option>
-            <option value="tres">3</option>
+            <option value="0">Número Camisetas</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
         </div>
         <div class="mb-3">
           <select id="e9cantidad2" class="form-select">
-            <option value="">Número Zapatos</option>
-            <option value="una">1</option>
-            <option value="dos">2</option>
-            <option value="tres">3</option>
+            <option value="0">Número Zapatos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
         </div>
         <div class="mb-3">
           <select id="e9cantidad3" class="form-select">
-            <option value="">Número Sombreros</option>
-            <option value="una">1</option>
-            <option value="dos">2</option>
-            <option value="tres">3</option>
+            <option value="0">Número Sombreros</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
         </div>
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" onclick="productoSeleccion()">
           Comprobar Selección
         </button>
+        <p id="ex9resultado"></p>
         <h3>
           10. Crea un formulario para que el usuario pueda introducir el nombre
           de su mascota, y seleccionar el tipo: perro, gato, tortuga, pajaro.
@@ -485,14 +486,15 @@
         </div>
         <div class="mb-3">
           <select id="e10mascota" class="form-select">
-            <option value="">Mascota</option>
+            <option value="Mi mascota no está incluida">Mascota</option>
             <option value="perro">Perro</option>
             <option value="gato">Gato</option>
             <option value="tortuga">Tortuga</option>
             <option value="pajaro">Pájaro</option>
           </select>
         </div>
-        <button type="button" class="btn btn-primary">Datos Mascota</button>
+        <button type="button" class="btn btn-primary" onclick="mascota()">Datos Mascota</button>
+        <p id="ex10resultados"></p>
       </div>
     </div>
 
